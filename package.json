@@ -1,7 +1,7 @@
 {
   "name": "timezone-i18n",
- "version": "1.1.0",
-  "description": "Enterprise-grade world time zone dataset with 20 multilingual localizations (EN, TR, AR, BG, BN, DE, ES, FR, HI, ID, IT, JA, NL, PL, PT, RO, RU, UK, UR, ZH). Built for high-performance frontend and backend production.",
+  "version": "1.1.0",
+  "description": "World time zone dataset with multilingual city and country translations for TypeScript, JavaScript, Node.js and modern frontend frameworks.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -12,10 +12,20 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "scripts": {
-    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
   },
-    "keywords": [
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
     "timezone",
     "timezones",
     "i18n",
@@ -27,6 +37,7 @@
     "yerelleştirme",
     "world-clock",
     "global-time",
+    "timezone-data",
     "timezone-dataset",
     "offset",
     "gmt",
@@ -60,14 +71,14 @@
   ],
   "author": "Emrah AKCAL",
   "license": "MIT",
- "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/EmrahAKCAL/timezone-i18n.git"
   },
   "bugs": {
-    "url": "https://github.com"
+    "url": "https://github.com/EmrahAKCAL/timezone-i18n/issues"
   },
-  "homepage": "https://github.com",
+  "homepage": "https://github.com/EmrahAKCAL/timezone-i18n#readme",
   "devDependencies": {
     "typescript": "^5.0.0",
     "tsup": "^8.0.0"
