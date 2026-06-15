@@ -61,16 +61,16 @@ export const baseTimezones: BaseTimezone[] = [
     { id: 'UTC+2-johannesburg', offset: 2, gmt: 'UTC+2', region: 'Africa' },
     { id: 'UTC+2-jerusalem', offset: 2, gmt: 'UTC+2', region: 'Asia' },
     { id: 'UTC+2-beirut', offset: 2, gmt: 'UTC+2', region: 'Asia' },
-    { id: 'UTC+3-istanbul', offset: 3, gmt: 'UTC+3', region: 'Europe/Asia' }, // Türkiye Kalıcı UTC+3
-    { id: 'UTC+3-moscow', offset: 3, gmt: 'UTC+3', region: 'Europe' }, // Rusya Kalıcı UTC+3
+    { id: 'UTC+3-istanbul', offset: 3, gmt: 'UTC+3', region: 'Europe/Asia' },
+    { id: 'UTC+3-moscow', offset: 3, gmt: 'UTC+3', region: 'Europe' },
     { id: 'UTC+3-riyadh', offset: 3, gmt: 'UTC+3', region: 'Asia' },
     { id: 'UTC+3-baghdad', offset: 3, gmt: 'UTC+3', region: 'Asia' },
     { id: 'UTC+3-doha', offset: 3, gmt: 'UTC+3', region: 'Asia' },
-    { id: 'UTC+3-amman', offset: 3, gmt: 'UTC+3', region: 'Asia' }, // Ürdün Kalıcı UTC+3
-    { id: 'UTC+3-damascus', offset: 3, gmt: 'UTC+3', region: 'Asia' }, // Suriye Kalıcı UTC+3
+    { id: 'UTC+3-amman', offset: 3, gmt: 'UTC+3', region: 'Asia' },
+    { id: 'UTC+3-damascus', offset: 3, gmt: 'UTC+3', region: 'Asia' },
     { id: 'UTC+3-nairobi', offset: 3, gmt: 'UTC+3', region: 'Africa' },
     { id: 'UTC+3-addis-ababa', offset: 3, gmt: 'UTC+3', region: 'Africa' },
-    { id: 'UTC+3.5-tehran', offset: 3.5, gmt: 'UTC+03:30', region: 'Asia' }, // İran Kalıcı UTC+3.5
+    { id: 'UTC+3.5-tehran', offset: 3.5, gmt: 'UTC+03:30', region: 'Asia' },
     { id: 'UTC+4-dubai', offset: 4, gmt: 'UTC+4', region: 'Asia' },
     { id: 'UTC+4-baku', offset: 4, gmt: 'UTC+4', region: 'Asia' },
     { id: 'UTC+4-tbilisi', offset: 4, gmt: 'UTC+4', region: 'Asia' },
@@ -85,7 +85,7 @@ export const baseTimezones: BaseTimezone[] = [
     { id: 'UTC+5.5-mumbai', offset: 5.5, gmt: 'UTC+05:30', region: 'Asia' },
     { id: 'UTC+5.75-kathmandu', offset: 5.75, gmt: 'UTC+05:45', region: 'Asia' },
     { id: 'UTC+6-dhaka', offset: 6, gmt: 'UTC+6', region: 'Asia' },
-    { id: 'UTC+6-almaty', offset: 6, gmt: 'UTC+6', region: 'Asia' }, // Kazakistan Kalıcı Tek Saat UTC+6
+    { id: 'UTC+6-almaty', offset: 6, gmt: 'UTC+6', region: 'Asia' },
     { id: 'UTC+6-bishkek', offset: 6, gmt: 'UTC+6', region: 'Asia' },
     { id: 'UTC+6.5-yangon', offset: 6.5, gmt: 'UTC+06:30', region: 'Asia' },
     { id: 'UTC+7-bangkok', offset: 7, gmt: 'UTC+7', region: 'Asia' },
@@ -113,7 +113,7 @@ export const baseTimezones: BaseTimezone[] = [
     { id: 'UTC+12-auckland', offset: 12, gmt: 'UTC+12', region: 'Oceania' },
     { id: 'UTC+12-suva', offset: 12, gmt: 'UTC+12', region: 'Oceania' },
     { id: 'UTC+12.75-chatham', offset: 12.75, gmt: 'UTC+12:45', region: 'Oceania' },
-    { id: 'UTC+13-apia', offset: 13, gmt: 'UTC+13', region: 'Pacific' }, // Samoa Tarih Çizgisi Batısı
+    { id: 'UTC+13-apia', offset: 13, gmt: 'UTC+13', region: 'Pacific' },
     { id: 'UTC+13-nukualofa', offset: 13, gmt: 'UTC+13', region: 'Pacific' },
     { id: 'UTC+14-kiritimati', offset: 14, gmt: 'UTC+14', region: 'Pacific' }
 ];

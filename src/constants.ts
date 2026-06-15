@@ -1,0 +1,22 @@
+export const SUPPORTED_LANGUAGES = [
+  'ar',
+  'bg',
+  'bn',
+  'de',
+  'en',
+  'es',
+  'fr',
+  'hi',
+  'id',
+  'it',
+  'ja',
+  'nl',
+  'pl',
+  'pt',
+  'ro',
+  'ru',
+  'tr',
+  'uk',
+  'ur',
+  'zh'
+] as const;

@@ -1,15 +1,15 @@
 {
   "name": "timezone-i18n",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "World time zone dataset with multilingual city and country translations for TypeScript, JavaScript, Node.js and modern frontend frameworks.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     }
   },
   "files": [

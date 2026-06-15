@@ -1,3 +1,5 @@
+import { SUPPORTED_LANGUAGES } from './constants.js';
+
 export interface BaseTimezone {
   id: string;
   offset: number;
@@ -10,7 +12,10 @@ export interface LocalizedFields {
   country: string;
 }
 
+export interface FinalTimezone extends BaseTimezone, LocalizedFields {
+  label: string;
+}
+
 export type TranslationDictionary = Record<string, LocalizedFields>;
 
-export type SupportedLanguages = 'bg'| 'de'| 'en'|'es'|'fr'|'it'|'ro'|'ru'|'tr';
-export interface FinalTimezone extends BaseTimezone, LocalizedFields {}
+export type SupportedLanguages = (typeof SUPPORTED_LANGUAGES)[number];
