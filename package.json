@@ -1,0 +1,75 @@
+{
+  "name": "timezone-i18n",
+ "version": "1.1.0",
+  "description": "Enterprise-grade world time zone dataset with 20 multilingual localizations (EN, TR, AR, BG, BN, DE, ES, FR, HI, ID, IT, JA, NL, PL, PT, RO, RU, UK, UR, ZH). Built for high-performance frontend and backend production.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean"
+  },
+    "keywords": [
+    "timezone",
+    "timezones",
+    "i18n",
+    "localization",
+    "multilingual",
+    "internationalization",
+    "saat-dilimi",
+    "saat-dilimleri",
+    "yerelleştirme",
+    "world-clock",
+    "global-time",
+    "timezone-dataset",
+    "offset",
+    "gmt",
+    "utc",
+    "countries-timezone",
+    "iana-timezone",
+    "date-time",
+    "react-timezone",
+    "nextjs-timezone",
+    "node-timezone",
+    "typescript-timezone",
+    "turkey-timezone",
+    "kazakhstan-timezone",
+    "mexico-timezone",
+    "current-time",
+    "dst",
+    "world-timezones",
+    "angular-timezone",
+    "vue-timezone",
+    "timezone-picker",
+    "timezone-select",
+    "iana",
+    "olson",
+    "multilang-timezone",
+    "arabic-timezone",
+    "chinese-timezone",
+    "hindi-timezone",
+    "indonesian-timezone",
+    "japanese-timezone",
+    "russian-timezone"
+  ],
+  "author": "Emrah AKCAL",
+  "license": "MIT",
+ "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmrahAKCAL/timezone-i18n.git"
+  },
+  "bugs": {
+    "url": "https://github.com"
+  },
+  "homepage": "https://github.com",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "tsup": "^8.0.0"
+  }
+}
