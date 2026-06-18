@@ -1,6 +1,6 @@
 {
   "name": "timezone-i18n",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "World time zone dataset with multilingual city and country translations for TypeScript, JavaScript, Node.js and modern frontend frameworks.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -67,7 +67,16 @@
     "hindi-timezone",
     "indonesian-timezone",
     "japanese-timezone",
-    "russian-timezone"
+    "russian-timezone",
+    "timezone-abbr",
+    "timezone-offset",
+    "rawoffset",
+    "hasdst",
+    "isocode",
+    "flag-timezone",
+    "intl-datetimeformat",
+    "luxon-timezone",
+    "moment-timezone"
   ],
   "author": "Emrah AKCAL",
   "license": "MIT",

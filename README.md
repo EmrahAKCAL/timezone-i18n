@@ -10,7 +10,8 @@ A comprehensive, enterprise-grade, and lightweight multilingual (i18n) world tim
 
 ## 🚀 Key Features
 
-- **Single Source of Truth (SSOT):** Technical metadata (`offsets`, `GMT`, `regions`) is isolated from localization dictionaries to minimize bundle size and avoid memory bloating.
+- **Single Source of Truth (SSOT):** Technical metadata (`offsets`, `rawOffset`, `iana`, `isoCode`, etc.) is strictly isolated from localization dictionaries to minimize bundle size and avoid memory bloating.
+- **Enterprise-Grade Metadata:** Includes native support for IANA zone names (`Europe/Istanbul`), ISO country codes (`TR`), time zone abbreviations (`TRT`), saniye-based offsets (`rawOffset`), and DST tracking flags.
 - **Dynamic Localization Processing:** Automatically structures dynamic option labels based on chosen dictionary mappings directly at runtime.
 - **Broad Language Coverage (20 Languages):** Native localized terminology spanning major international software markets.
 - **Native TypeScript Support:** Built with strict schema definitions ensuring 100% type safety.
@@ -42,21 +43,26 @@ const trTimezones = getTimezones('tr');
 console.log(trTimezones[0]);
 
 /*
-Expected Output Object Struct:
+Expected Output Object Struct (v1.2.0+):
 {
   id: 'UTC+3-istanbul',
   offset: 3,
+  rawOffset: 10800,
   gmt: 'UTC+3',
+  abbr: 'TRT',
+  iana: 'Europe/Istanbul',
+  isoCode: 'TR',
   region: 'Europe/Asia',
+  hasDst: false,
   city: 'İstanbul',
   country: 'Türkiye',
-  label: 'İstanbul, Türkiye'
+  label: 'İstanbul, Türkiye (UTC+3)'
 }
 */
 
 // Fetch dataset using the default fallback (English)
 const enTimezones = getTimezones('en'); 
-// Dynamically constructs values formatted as: "Istanbul, Turkey"
+// Dynamically constructs labels formatted as: "City, Country (UTC+Offset)"
 ```
 
 ---

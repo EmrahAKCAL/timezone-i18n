@@ -3,6 +3,11 @@ import { SUPPORTED_LANGUAGES } from './constants.js';
 export interface BaseTimezone {
   id: string;
   offset: number;
+  rawOffset: number;
+  abbr: string;
+  iana: string;
+  isoCode: string;
+  hasDst: boolean;
   gmt: string;
   region: string;
 }
